@@ -1,0 +1,10 @@
+name: Test Runner
+on:
+  workflow_dispatch:
+
+jobs:
+  demo:
+    runs-on: self-hosted
+    steps:
+      - name: Hello from runner
+        run: echo "Runner test successful!"
