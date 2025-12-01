@@ -33,7 +33,7 @@ jobs:
 
     - name: Restart Backend with PM2
       run: |
-        cd ~/actions-runner/_work/nodejs-cicd/nodejs-cicd
+        cd /home/ubuntu/actions-runner/_work/cicd-code/cicd-code
         pm2 describe Backend > /dev/null 2>&1 \
           && pm2 restart Backend \
           || pm2 start server.js --name Backend
