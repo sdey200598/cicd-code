@@ -6,6 +6,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "ignore": [
+    "actions-runner/*",
+    "node_modules/*",
+    "*.log"
+  ],
+  "watch": [
+    "server.js"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
